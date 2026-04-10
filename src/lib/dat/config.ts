@@ -1,0 +1,45 @@
+// DAT Configuration
+// Generated from top_200_exam_universe_seed.csv
+
+export const EXAM_CONFIG = {
+  examId: "EXAM168",
+  slug: "dat",
+  name: "DAT",
+  fullName: "Dental Admission Test",
+  alias: "Dental Admission Test",
+  family: "DAT",
+  category: "Admissions",
+  subcategory: "Dental admissions",
+  country: "United States/Canada",
+  region: "North America",
+  languages: ["English"],
+  estimatedAnnualTakers: "smaller",
+  testingWindow: "Year-round",
+  schedulePattern: "Continuous",
+  ageGroup: "20-30",
+  targetUser: "Dental applicant",
+  delivery: "Computer-based",
+  questionTypes: ["MCQ"],
+  adaptivity: "Linear",
+  sections: "Science + perceptual + RC + QR",
+  scoringMode: "Scaled",
+  essayOrSpeaking: "No",
+  ipRisk: "High",
+  contentReuse: "science_admissions",
+  uiEngine: "timed_objective",
+  monetizationPotential: "Low",
+  tier: "Tier 8",
+  launchWave: "Wave 10",
+  themeColor: "#1E40AF",
+  themeColorDark: "#1E3A8A",
+  localizationComplexity: "Low",
+  offlineNeeded: false,
+  mobileFirst: false,
+  locale: "en",
+  isRTL: false,
+  freemiumGate: {
+    dailyQuestions: 10,
+  },
+} as const;
+
+export type ExamConfig = typeof EXAM_CONFIG;
