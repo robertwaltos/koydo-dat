@@ -95,7 +95,7 @@ Be honest and constructive. Score fairly — most student essays fall between 2-
     essay_text: essay,
     evaluation: evaluation,
     composite_score: evaluation.composite,
-  }).catch(() => null); // Non-blocking — table may not exist in all envs
+  }); // Non-blocking — insert result is intentionally ignored
 
   return NextResponse.json({ evaluation, prompt: essayPrompt });
 }
